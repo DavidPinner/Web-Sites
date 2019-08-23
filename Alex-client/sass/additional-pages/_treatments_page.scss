@@ -1,0 +1,84 @@
+.treatments__page {
+    margin-top: -2rem !important;
+    margin-bottom: 0 !important;
+}
+
+.card {
+    margin: 0 2rem !important;
+    margin-bottom: 1.3rem !important;
+}
+
+.card {
+    &__image {
+        height: 15rem;
+        width: 100%;
+    }
+    &__btn {
+        color: $color-gray-light-2;
+        text-transform: inherit !important;
+        font-size: 1.4rem !important;
+    }
+    &__btn:hover {
+        color: $color-gray-light-2;
+    }
+    &-title {
+        font-size: 1.7rem;
+        color: $color-gray-light-1;
+    }
+    &-img-top {
+        filter: brightness(50%) !important;
+    }
+}
+
+/////////////////////////
+//    Treatments pages
+/////////////////////////
+// acupuncture
+.acupuncture__para::first-letter {
+    color: $color-primary;
+    font-size: $default-font-size;
+}
+
+.acupuncture__header-main {
+    padding-top: 12rem !important;
+}
+
+// Facial aesthetics 
+.Facial {
+    &__heading {
+        font-size: 2rem;
+        color: $color-primary-dark;
+        text-decoration: underline;
+        &--sub {
+            font-size: 1rem;
+            color: $color-primary-light;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .acupuncture__para {
+        font-size: 1.2rem !important;
+    }
+    .acupuncture__para::first-letter {
+        color: $color-gray-dark-2;
+    }
+}
+
+@media (min-width: 1200px) {
+    .acupuncture__header-main {
+        padding-top: 10rem !important;
+    }
+    .acupuncture__header-sub {
+        font-size: 2.5rem !important;
+    }
+    .acupuncture__para {
+        line-height: 2.7rem;
+        font-size: 1.6rem !important;
+    }
+    .Facial__heading--sub {
+        font-size: $default-font-size;
+    }
+}
+
+// Facial aesthetics

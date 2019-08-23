@@ -1,0 +1,59 @@
+///////////////////////////////////
+// media styles
+///////////////////////////////////
+
+.media {
+    background-color: $color-gray-light-2;
+    border-radius: $border-Radius-small;
+    border-bottom: .05rem solid $color-gray-dark-2;
+    &__picture {
+        height: 15rem;
+        width: auto;
+        border-top-left-radius: $border-Radius-small;
+        border-bottom-left-radius: $border-Radius-small;
+    }
+    &__heading {
+        // styles the highlighted headers on the press releases
+        font-weight: 300;
+        text-transform: uppercase;
+        color: $color-white;
+        margin-left: -4rem;
+        z-index: 1000;
+        &-span {
+            box-decoration-break: clone;
+            -webkit-box-decoration-break: clone;
+            padding: .5rem;
+            
+            &--1 {
+                // adds a ble gradient to the background 
+                background-image: linear-gradient(to right bottom, rgba($color-primary, .85), rgba($color-primary-light, .85));
+            }
+        }
+    }
+}
+
+///////////////////////////////////
+// media Queries
+///////////////////////////////////
+
+@media (min-width: 576px) {
+    .media__button {
+        font-size: 1.3rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .media__heading--main {
+        margin-top: -2rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .media__heading--main {
+        font-size: 2.2rem;
+        margin-top: -4rem;
+    }
+    .media__heading-span {
+            font-size: 1.6rem;
+    }
+}

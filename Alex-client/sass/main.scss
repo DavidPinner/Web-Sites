@@ -1,0 +1,31 @@
+//
+$theme-colors: ( "primary": #1404f3, );
+@import "../node_modules/bootstrap/scss/bootstrap";
+//
+
+@import"abstract/variable";
+//
+@import"additional-pages/about_page";
+@import"additional-pages/press_page";
+@import"additional-pages/portfolio-page";
+@import"additional-pages/contact_page";
+
+@import"additional-pages/treatments_page";
+//
+@import"base/animations";
+@import"base/base";
+@import"base/button";
+@import"base/typography";
+@import"base/utilities";
+//
+@import"components/press";
+@import"components/form";
+@import"components/photo";
+@import"components/popup";
+@import"components/testimonials";
+@import"components/treatments-card";
+//
+@import"layout//footer";
+@import"layout/header";
+@import"layout/navigation";
+@import"layout/sections";

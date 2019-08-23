@@ -1,0 +1,39 @@
+.images {
+    &__photo {
+        width: 25%;
+        box-shadow: 1rem 1rem 2rem rgba($color-black, .4);
+        transition: all 0.2s;
+        outline-offset: 2rem;
+        &--id {
+            border-radius: 30%;
+            width: 40%;
+        }
+        &:hover {
+            border-radius: 10%;
+            transform: scale(1.05) translateY(-.5rem);
+            box-shadow: 0 2.5rem 4rem rgba($color-black, .6);
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .images__photo--id {
+        width: 50%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .images {
+        &__photo {
+            &--id {
+                border-radius: 30%;
+                width: 30%;
+            }
+            &:hover {
+                border-radius: 10%;
+                transform: scale(1.05) translateY(-.5rem);
+                box-shadow: 0 2.5rem 4rem rgba($color-black, .6);
+            }
+        }
+    }
+}

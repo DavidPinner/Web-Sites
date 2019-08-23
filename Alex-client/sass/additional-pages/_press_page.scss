@@ -1,0 +1,38 @@
+///////////////////////////////////
+// media Queries
+///////////////////////////////////
+
+// used in the span tags
+.press {
+    &__bold {
+        font-weight: 700;
+    }
+}
+
+
+// to be used for the subscribe button once coded
+// .press {
+//     &__input {
+//         font-size: 2rem;
+//         font-weight: 200;
+//         padding: 2.2rem 1rem;
+//         border: .15rem solid $color-gray-dark-2;
+//     }
+//     &__btn {
+//         cursor: pointer;
+//         border: .15rem solid $color-gray-dark-2;
+//         transition: all .2s;
+//         &:hover {
+//             transform: translateY(-.2.5rem);
+//             box-shadow: .5rem .5rem .5rem $color-black-light;
+//         }
+//     }
+// }
+
+// .fas {
+//     color: $color-gray-light-3;
+//     font-weight: 700;
+// }
+// .fas:hover {
+//     color: $color-primary;
+// }

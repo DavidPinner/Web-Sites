@@ -1,0 +1,152 @@
+///////////////////////////////////
+// About page styles
+///////////////////////////////////
+
+// used to style and size photos
+.about {
+    &__photo {
+        width: 35rem;
+        height: auto;
+    }
+}
+
+// adds extra styles to the P tags
+.about__para::first-letter {
+    color: $color-primary;
+    font-size: $default-font-size;
+}
+
+///////////////////////////////////
+// About page navbar styles
+///////////////////////////////////
+
+// changes the styling of the navbar
+.navbar-toggler-icon {
+
+    position: relative;
+    color: $color-primary-light;
+    &,
+    &::before,
+    &::after {
+        width: 2.5rem;
+        height: 2px;
+        background-color: $color-primary-light;
+        display: inline-block;
+    }
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        transition: all .2s;
+    }
+    &::before {
+        top: -.8rem;
+    }
+    &::after {
+        top: .8rem;
+    }
+ 
+}
+ // the top and bottom icon move upon hover
+.navbar-toggler:hover .navbar-toggler-icon::before {
+    top: 1rem;
+}
+.navbar-toggler:hover .navbar-toggler-icon::after {
+    top: -1rem;
+}
+
+// styling the nav links
+.nav-link {
+    &:link,
+    &:visited {
+        display: inline-block;
+        font-size: 2rem;
+        color: $color-white;
+        font-family: 'Playfair Display', serif;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: all .4s;
+    }
+    &::after {
+        content: "";
+        display: block;
+        width: 0;
+        height: .2rem;
+        background-color: $color-primary-light;
+        transition: width .5s;
+    }
+    &:hover::after {
+        width: 100%;
+    }
+    &:hover,
+    &:active {
+        color: $color-primary-light;
+        transform: translatey(-.5rem);
+    }
+}
+
+///////////////////////////////////
+// media Queries
+///////////////////////////////////
+
+@media (min-width: 576px) {
+    .about {
+        &__photo {
+            width: 40rem;
+            height: auto;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+
+    .nav-link:link,
+    .nav-link:visited{
+
+        font-size: $default-font-size;
+    }
+    .about {
+        &__photo {
+            width: 38rem;
+            height: auto;
+        }
+        &__para {
+            line-height: 2.2rem;
+        }
+        &__year {
+            font-size: 2rem;
+        }
+    }
+    .about__para::first-letter {
+        color: $color-gray-dark-2;
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width: 992px) {
+
+    .nav-link:link,
+    .nav-link:visited{
+
+        font-size: 2rem;
+    }
+    .about {
+        &__photo {
+            width: 40rem;
+            height: auto;
+        }
+        &__heading--sub {
+            font-size: 2rem !important;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        padding: 0;
+    }
+    .about__para {
+        margin-left: -4rem !important;
+    }
+}

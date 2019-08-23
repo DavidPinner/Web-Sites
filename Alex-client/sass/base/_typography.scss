@@ -1,0 +1,62 @@
+.heading-main {
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    color: $color-gray-light-1;
+    font-weight: 700;
+}
+
+.heading-secondary {
+    font-size: 3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    background-image: linear-gradient(to right, $color-primary-light, $color-primary);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+
+.heading-tertiary {
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: $color-gray-dark-1;
+}
+
+.paragraph {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+    color: $color-gray-dark-2;
+    hyphens: auto;
+    &:not(:last-child) {
+        margin-bottom: 1.5rem;
+    }
+}
+
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    color: $color-gray-dark-1;
+    //
+}
+
+h4 {
+    text-align: center;
+    font-size: 1.2rem;
+    color: $color-gray-light-1;
+    letter-spacing: .3rem;
+}
+
+@media (min-width: 768px) {
+    .paragraph {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .paragraph {
+        font-size: 1.3rem;
+    }
+}
